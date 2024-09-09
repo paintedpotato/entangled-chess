@@ -66,9 +66,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function movePiece(targetSquare) {
-        targetSquare.appendChild(selectedPiece);
-        deselectPiece();
+    const targetPiece = targetSquare.querySelector('.piece');
+
+    if (targetPiece) {
+        // Remove the target piece (capturing it)
+        targetSquare.removeChild(targetPiece);
     }
+
+    // Move the selected piece to the target square
+    targetSquare.appendChild(selectedPiece);
+    deselectPiece();
+}
+
 
     createBoard();
 });
