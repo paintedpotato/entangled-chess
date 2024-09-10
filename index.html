@@ -1,37 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chess</title>
-    <style>
-        #chessboard {
-            display: grid;
-            grid-template-columns: repeat(8, 60px);
-            grid-template-rows: repeat(8, 60px);
-            width: 480px;
-            height: 480px;
-            border: 2px solid black;
-        }
-        .square {
-            width: 60px;
-            height: 60px;
-        }
-        .light {
-            background-color: #f0d9b5;
-        }
-        .dark {
-            background-color: #b58863;
-        }
-        .piece {
-            font-size: 40px;
-            text-align: center;
-            line-height: 60px;
-        }
-    </style>
+  <title>Chess Game</title>
+  <style>
+    /* CSS styles for the chessboard */
+    .chessboard {
+      display: grid;
+      grid-template-columns: repeat(8, 50px);
+      grid-template-rows: repeat(8, 50px);
+      border: 1px solid black;
+    }
+
+    .square {
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    .square:nth-child(odd) {
+      background-color: #f0f0f0;
+    }
+
+    .square:nth-child(even) {
+      background-color: #d0d0d0;
+    }
+  </style>
 </head>
 <body>
-    <div id="chessboard"></div>
-    <script src="script.js"></script>
-</body>
+  <div id="chessboard"></div>
+  <script src="script.js"></script> </body>
 </html>
