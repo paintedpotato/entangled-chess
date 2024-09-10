@@ -5,6 +5,6 @@
 
 ⚔️
 
-Trivia:
-Currently deployed main branch, built with OpenAI's GPT 4.0's help
+#### Trivia:
+Currently deployed main branch, built with OpenAI's GPT 4.0's help <br>
 Second branch under development, originally built with Gemini
